@@ -1,0 +1,17 @@
+{
+  "name": "auto-reload",
+  "version": "1.0.0",
+  "description": "Auto reload backend dan frontend",
+  "main": "index.js",
+  "repository": "https://github.com/mdedirudianto/auto-reload.git",
+  "author": "M Dedi Rudianto <mdedirudianto@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "live": "start http://localhost:4000 & nodemon -w *.* -w views/*.* index.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3",
+    "reload": "^2.2.2"
+  }
+}
